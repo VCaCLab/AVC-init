@@ -22,12 +22,21 @@
 <body>
 <main id="main-content">
 
-<!-- ================= Title & Authors ================= -->
+<!-- ================= Title / Logo / Authors ================= -->
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
+
+          <!-- Logo (GitHub Pages URL; if you prefer relative, change src to "static/images/logo.png") -->
+          <div style="margin-bottom: 1.2rem;">
+            <img
+              src="https://vcaclab.github.io/AVC-init/static/images/logo.png"
+              alt="AVC-Init Logo"
+              style="max-width: 140px; width: 100%; height: auto;"
+            />
+          </div>
 
           <h1 class="title is-1 publication-title">
             AVC-Init: Aggregated Visual Constraints for Decoupled Visual-Inertial Initialization
@@ -45,8 +54,7 @@
             <sup>*</sup>Corresponding authors
           </div>
 
-          <!-- ================= Links ================= -->
-          <div class="publication-links" style="margin-top: 1.2rem;">
+          <div class="publication-links" style="margin-top: 1.4rem;">
             <a href="https://github.com/VCaCLab/AVC-init"
                class="button is-normal is-rounded is-dark"
                target="_blank" rel="noopener noreferrer">
@@ -108,10 +116,17 @@
       <div class="carousel results-carousel">
 
         <div class="item">
-          <iframe
-            src="https://raw.githubusercontent.com/VCaCLab/AVC-init/master/static/images/fig1.pdf"
-            style="width:100%; height:600px; border:0;">
-          </iframe>
+          <!-- Fig.1 (GitHub Pages URL; replace with "static/images/fig1.pdf" if you want relative) -->
+          <object
+            data="https://vcaclab.github.io/AVC-init/static/images/fig1.pdf"
+            type="application/pdf"
+            style="width:100%; height:600px;">
+            <p>
+              Your browser cannot display this PDF inline.
+              <a href="https://vcaclab.github.io/AVC-init/static/images/fig1.pdf" target="_blank" rel="noopener noreferrer">Open Fig. 1 PDF</a>.
+            </p>
+          </object>
+
           <h2 class="subtitle has-text-centered">
             Fig. 1: Overview of AVC-Init. It includes data association, gyroscope bias estimation with aggregated
             rotational constraints, global rotation recovery via bias-corrected IMU integration, global-position-based
@@ -120,10 +135,17 @@
         </div>
 
         <div class="item">
-          <iframe
-            src="https://raw.githubusercontent.com/VCaCLab/AVC-init/master/static/images/fig2.pdf"
-            style="width:100%; height:600px; border:0;">
-          </iframe>
+          <!-- Fig.2 -->
+          <object
+            data="https://vcaclab.github.io/AVC-init/static/images/fig2.pdf"
+            type="application/pdf"
+            style="width:100%; height:600px;">
+            <p>
+              Your browser cannot display this PDF inline.
+              <a href="https://vcaclab.github.io/AVC-init/static/images/fig2.pdf" target="_blank" rel="noopener noreferrer">Open Fig. 2 PDF</a>.
+            </p>
+          </object>
+
           <h2 class="subtitle has-text-centered">
             Fig. 2: Factor-graph comparison between (a) conventional visual-inertial bundle adjustment (VI-BA) and
             (b) the proposed low-dimensional visual-inertial AEA (VI-AEA), which avoids explicitly optimizing 3D
@@ -150,10 +172,17 @@
       </p>
 
       <div class="has-text-centered">
-        <iframe
-          src="https://raw.githubusercontent.com/VCaCLab/AVC-init/master/static/images/fig4.pdf"
-          style="width:80%; height:600px; border:0;">
-        </iframe>
+        <!-- Fig.3 corresponds to fig4.pdf -->
+        <object
+          data="https://vcaclab.github.io/AVC-init/static/images/fig4.pdf"
+          type="application/pdf"
+          style="width:80%; height:600px;">
+          <p>
+            Your browser cannot display this PDF inline.
+            <a href="https://vcaclab.github.io/AVC-init/static/images/fig4.pdf" target="_blank" rel="noopener noreferrer">Open Fig. 3 PDF</a>.
+          </p>
+        </object>
+
         <p>
           Fig. 3: Gyroscope-bias estimation accuracy under different pixel-noise levels, highlighting improved
           robustness with aggregated long-baseline constraints.
