@@ -12,9 +12,9 @@
   <meta name="language" content="English">
   
   <meta name="citation_title" content="AVC-Init: Aggregated Visual Constraints for Decoupled Visual-Inertial Initialization">
-  <meta name="citation_author" content="Ge, Yangbing">
-  <meta name="citation_publication_date" content="2025">
-  <meta name="citation_pdf_url" content="https://github.com/VCaCLab/AVC-Init">
+  <meta name="citation_author" content="Ge, Yangbing; Zhang, Huaiyi; Lian, Xiangkai; Zhang, Lilian; Hu, Dewen">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_pdf_url" content="https://vcaclab.github.io/AVC-init/">
   
   <title>AVC-Init: Decoupled Visual-Inertial Initialization - VCaCLab</title>
   
@@ -33,11 +33,11 @@
       {
         "@type": "Person",
         "name": "Yangbing Ge",
-        "affiliation": "VCaCLab"
+        "affiliation": "National University of Defense Technology"
       }
     ],
     "keywords": ["Visual-Inertial Initialization", "VIO", "SLAM"],
-    "url": "https://github.com/VCaCLab/AVC-Init"
+    "url": "https://vcaclab.github.io/AVC-init/"
   }
   </script>
 </head>
@@ -52,12 +52,16 @@
             <h1 class="title is-1 publication-title">AVC-Init: Aggregated Visual Constraints for Decoupled Visual-Inertial Initialization</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="#" target="_blank">Yangbing Ge</a><sup>1</sup>
+                <a href="https://vcaclab.github.io/AVC-init/" target="_blank">Yangbing Ge</a>, 
+                Huaiyi Zhang, 
+                Xiangkai Lian, 
+                Lilian Zhang*, 
+                [cite_start]Dewen Hu* [cite: 3]
               </span>
             </div>
 
             <div class="is-size-5 publication-authors">
-              <span class="author-block">VCaCLab, Institution Name</span>
+              [cite_start]<span class="author-block">National University of Defense Technology [cite: 23]</span>
             </div>
 
             <div class="column has-text-centered">
@@ -69,9 +73,9 @@
                   </a>
                 </span>
                 <span class="link-block">
-                  <a href="https://github.com/VCaCLab/AVC-Init" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://vcaclab.github.io/AVC-init/" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="ai ai-arxiv"></i></span>
-                    <span>arXiv</span>
+                    <span>Project Page</span>
                   </a>
                 </span>
               </div>
@@ -89,7 +93,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            高效且鲁棒的初始化是保障视觉惯性里程计 (VIO) 系统性能的基石 。本文提出了一种名为 <strong>AVC-Init</strong> 的基于聚合视觉约束的解耦式 VIO 初始化框架 。该框架利用任意共视关键帧间的聚合旋转约束，结合预积分合并技术，实现了对陀螺仪零偏的高效独立估计 [cite: 4, 49]。随后，通过全局位置优化策略，在紧耦合与松耦合形式下实现了对速度、重力向量和加速度计零偏的鲁棒估计 [cite: 4, 50]。在最终优化阶段，提出的聚合对极调整 (AEA) 方法在低维空间内完成了全参数的高效联合估计，且无需显式维护点云 [cite: 4, 50]。
+            [cite_start]Efficient and robust initialization is critical for visual-inertial odometry (VIO)[cite: 5]. [cite_start]We propose <strong>AVC-Init</strong>, a decoupled initialization framework based on <strong>Aggregated Visual Constraints (AVC)</strong>[cite: 7, 101]. [cite_start]By adopting a rotation-translation decoupling strategy, the framework first estimates gyroscope bias using aggregated rotational constraints between co-visible keyframes and pre-integration merging[cite: 8, 104]. [cite_start]Subsequently, initial velocity and gravity are robustly estimated via global position optimization, supporting both loosely-coupled (GP-L) and tightly-coupled (GP-T) schemes[cite: 9, 107]. [cite_start]For joint optimization, we introduce <strong>Aggregated Epipolar Adjustment (AEA)</strong>[cite: 10, 108]. [cite_start]By decoupling visual observations from states, AEA enables efficient full-parameter estimation in a low-dimensional space without explicitly maintaining 3D points[cite: 10, 109].
           </p>
         </div>
       </div>
@@ -101,17 +105,17 @@
   <div class="hero-body">
     <div class="container">
       <h2 class="title is-3 has-text-centered">Methodology</h2>
-      <div id="results-carousel" class="carousel results-carousel">
+            <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
           <img src="static/images/framework.jpg" alt="AVC-Init Overall Framework"/>
           <h2 class="subtitle has-text-centered">
-            图 1: AVC-Init 初始化整体框架。包括数据关联、陀螺仪零偏估计、全局旋转估计、以及基于 AEA 的联合优化 [cite: 47]。
+            [cite_start]Fig 1: Overview of AVC-Init: Includes data association, gyroscope bias estimation using aggregated rotational constraints, global rotation recovery, and low-dimensional joint optimization using AEA[cite: 95, 96, 97, 98, 99].
           </h2>
         </div>
         <div class="item">
-          <img src="static/images/factor_graph.jpg" alt="Factor Graph Representation"/>
+                    <img src="static/images/factor_graph.jpg" alt="Factor Graph Representation"/>
           <h2 class="subtitle has-text-centered">
-            图 2: 不同优化方式的因子图表示：(a) 传统的 VI-BA 与 (b) 本文提出的低维 VI-AEA [cite: 215]。
+            [cite_start]Fig 2: Factor graph comparison: (a) traditional VI-BA and (b) our proposed low-dimensional VI-AEA, which discards high-dimensional 3D point parameters[cite: 284, 285, 342, 350].
           </h2>
         </div>
       </div>
@@ -124,12 +128,15 @@
     <h2 class="title is-3 has-text-centered">Experimental Results</h2>
     <div class="content">
       <p>
-        在 EuRoC 公开数据集和仿真环境上的实验表明，AVC-Init 在收敛速度与估计精度方面表现优异 [cite: 5, 265]。相比于基线方法，在存在较大像素噪声的情况下，长基线聚合约束能显著提升陀螺仪零偏的估计鲁棒性 [cite: 264]。
+        [cite_start]Evaluations on simulation, EuRoC, and real-world datasets demonstrate the superior accuracy and efficiency of AVC-Init[cite: 12]. [cite_start]The long-baseline aggregated constraints provide larger effective parallax, geometrically mitigating the negative impact of pixel noise on gyroscope bias estimation compared to standard adjacent-frame methods[cite: 421].
       </p>
       <div class="has-text-centered">
-        <img src="static/images/noise_analysis.jpg" style="max-width: 80%;" alt="Noise Analysis"/>
-        <p>图 3: 不同像素噪声水平下 $b_g$ 估计精度对比，展示了本文方法在噪声环境下的优越性 [cite: 257]。</p>
+                <img src="static/images/noise_analysis.jpg" style="max-width: 80%;" alt="Noise Analysis"/>
+        [cite_start]<p>Fig 3: Comparison of $b_g$ estimation accuracy under different pixel noise levels, highlighting the robustness of the proposed long-baseline method[cite: 416].</p>
       </div>
+      <p>
+        [cite_start]System-level integration with <strong>ORB-SLAM3</strong> shows that our method consistently outperforms the original system across all EuRoC sequences, achieving an average accuracy improvement of <strong>10.91%</strong>[cite: 530]. [cite_start]Furthermore, the VI-AEA module offers a significant advantage in execution speed over traditional VI-BA[cite: 537].
+      </p>
     </div>
   </div>
 </section>
@@ -137,12 +144,12 @@
 <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre id="bibtex-code"><code>@article{ge2025avcinit,
+      <pre id="bibtex-code"><code>@article{ge2026avcinit,
   title={AVC-Init: Aggregated Visual Constraints for Decoupled Visual-Inertial Initialization},
-  author={Ge, Yangbing and others},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2025},
-  url={https://github.com/VCaCLab/AVC-Init}
+  author={Ge, Yangbing and Zhang, Huaiyi and Lian, Xiangkai and Zhang, Lilian and Hu, Dewen},
+  journal={arXiv preprint},
+  year={2026},
+  url={https://vcaclab.github.io/AVC-init/}
 }</code></pre>
     </div>
 </section>
