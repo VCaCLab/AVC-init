@@ -11,229 +11,164 @@
   <meta name="robots" content="index, follow" />
   <meta name="language" content="English" />
 
-  <!-- Scholar meta -->
-  <meta name="citation_title" content="AVC-Init: Aggregated Visual Constraints for Decoupled Visual-Inertial Initialization" />
-  <meta name="citation_author" content="Ge, Yangbing" />
-  <meta name="citation_author" content="Zhang, Huaiyi" />
-  <meta name="citation_author" content="Lian, Xiangkai" />
-  <meta name="citation_author" content="Zhang, Lilian" />
-  <meta name="citation_author" content="Hu, Dewen" />
-  <meta name="citation_publication_date" content="2025" />
-  <meta name="citation_pdf_url" content="https://vcaclab.github.io/AVC-init/" />
-
-  <title>AVC-Init: Decoupled Visual-Inertial Initialization - VCaCLab</title>
+  <title>AVC-Init: Decoupled Visual-Inertial Initialization</title>
 
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico" />
   <link rel="stylesheet" href="static/css/bulma.min.css" />
   <link rel="stylesheet" href="static/css/index.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-
-  <!-- Optional: if you use Font Awesome / Academicons icons, ensure these are included somewhere in your template -->
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"> -->
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"> -->
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ScholarlyArticle",
-    "headline": "AVC-Init: Aggregated Visual Constraints for Decoupled Visual-Inertial Initialization",
-    "author": [
-      { "@type": "Person", "name": "Yangbing Ge", "affiliation": "National University of Defense Technology (VCaCLab)" },
-      { "@type": "Person", "name": "Huaiyi Zhang", "affiliation": "National University of Defense Technology (VCaCLab)" },
-      { "@type": "Person", "name": "Xiangkai Lian", "affiliation": "National University of Defense Technology (VCaCLab)" },
-      { "@type": "Person", "name": "Lilian Zhang", "affiliation": "National University of Defense Technology (VCaCLab)" },
-      { "@type": "Person", "name": "Dewen Hu", "affiliation": "National University of Defense Technology (VCaCLab)" }
-    ],
-    "keywords": ["Visual-Inertial Initialization", "VIO", "SLAM", "Aggregated Visual Constraints", "Aggregated Epipolar Adjustment"],
-    "url": "https://vcaclab.github.io/AVC-init/"
-  }
-  </script>
 </head>
 
 <body>
-  <main id="main-content">
+<main id="main-content">
 
-    <!-- Title / Authors / Links -->
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container is-max-desktop">
-          <div class="columns is-centered">
-            <div class="column has-text-centered">
-              <h1 class="title is-1 publication-title">
-                AVC-Init: Aggregated Visual Constraints for Decoupled Visual-Inertial Initialization
-              </h1>
+<!-- ================= Title & Authors ================= -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
 
-              <div class="is-size-5 publication-authors">
-                <span class="author-block">
-                  <a href="#" target="_blank" rel="noopener noreferrer">Yangbing Ge</a><sup>1</sup>,
-                </span>
-                <span class="author-block">
-                  <a href="#" target="_blank" rel="noopener noreferrer">Huaiyi Zhang</a><sup>1</sup>,
-                </span>
-                <span class="author-block">
-                  <a href="#" target="_blank" rel="noopener noreferrer">Xiangkai Lian</a><sup>1</sup>,
-                </span>
-                <span class="author-block">
-                  <a href="#" target="_blank" rel="noopener noreferrer">Lilian Zhang</a><sup>1</sup><sup>*</sup>,
-                </span>
-                <span class="author-block">
-                  <a href="#" target="_blank" rel="noopener noreferrer">Dewen Hu</a><sup>1</sup><sup>*</sup>
-                </span>
-              </div>
+          <h1 class="title is-1 publication-title">
+            AVC-Init: Aggregated Visual Constraints for Decoupled Visual-Inertial Initialization
+          </h1>
 
-              <div class="is-size-5 publication-authors">
-                <span class="author-block"><sup>1</sup>National University of Defense Technology (NUDT), VCaCLab</span>
-              </div>
-
-              <div class="is-size-6" style="margin-top: 0.5rem;">
-                <span><sup>*</sup>Corresponding authors</span>
-              </div>
-
-              <div class="publication-links" style="margin-top: 1rem;">
-                <span class="link-block">
-                  <a href="https://github.com/VCaCLab/AVC-Init" target="_blank" rel="noopener noreferrer"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"><i class="fab fa-github"></i></span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <span class="link-block">
-                  <!-- Replace with your actual arXiv link once available -->
-                  <a href="https://vcaclab.github.io/AVC-init/" target="_blank" rel="noopener noreferrer"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"><i class="ai ai-arxiv"></i></span>
-                    <span>Paper</span>
-                  </a>
-                </span>
-
-                <span class="link-block">
-                  <a href="https://vcaclab.github.io/AVC-init/" target="_blank" rel="noopener noreferrer"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon"><i class="fas fa-globe"></i></span>
-                    <span>Project Page</span>
-                  </a>
-                </span>
-              </div>
-
-            </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Yangbing Ge</span>,
+            <span class="author-block">Huaiyi Zhang</span>,
+            <span class="author-block">Xiangkai Lian</span>,
+            <span class="author-block">Lilian Zhang</span><sup>*</sup>,
+            <span class="author-block">Dewen Hu</span><sup>*</sup>
           </div>
+
+          <div class="is-size-6" style="margin-top: 0.5rem;">
+            <sup>*</sup>Corresponding authors
+          </div>
+
+          <div class="publication-links" style="margin-top: 1.2rem;">
+            <a href="https://github.com/VCaCLab/AVC-Init"
+               class="button is-normal is-rounded is-dark"
+               target="_blank" rel="noopener noreferrer">
+              Code
+            </a>
+
+            <a href="https://vcaclab.github.io/AVC-init/"
+               class="button is-normal is-rounded is-dark"
+               target="_blank" rel="noopener noreferrer">
+              Paper
+            </a>
+          </div>
+
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!-- Abstract -->
-    <section class="section hero is-light">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Abstract</h2>
-            <div class="content has-text-justified">
-              <p>
-                Efficient and robust initialization is critical for visual-inertial odometry (VIO), yet many existing
-                methods rely on point-wise visual observations and require iterative maintenance of high-dimensional 3D
-                landmarks, which limits both efficiency and scalability. We propose <strong>AVC-Init</strong>, a decoupled
-                VIO initialization framework based on <em>Aggregated Visual Constraints</em> (AVC). Using a
-                rotation–translation decoupling strategy, AVC-Init first estimates gyroscope bias via aggregated rotational
-                constraints between co-visible keyframes and pre-integration merging. It then robustly estimates initial
-                velocity, gravity, and accelerometer bias through global position optimization, supporting both
-                loosely-coupled and tightly-coupled schemes. For joint refinement, we introduce <em>Aggregated Epipolar
-                Adjustment</em> (AEA), which decouples observations from states to enable efficient full-parameter
-                estimation in a low-dimensional space without explicitly maintaining 3D points. A depth-weighted
-                multi-view triangulation step further ensures fast, unbiased 3D point generation. Experiments on
-                simulation, EuRoC, and real-world datasets demonstrate that AVC-Init achieves superior accuracy and
-                efficiency.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- ================= Abstract ================= -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
 
-    <!-- Methodology / Figures -->
-    <section class="hero is-small">
-      <div class="hero-body">
-        <div class="container">
-          <h2 class="title is-3 has-text-centered">Methodology</h2>
+        <h2 class="title is-3">Abstract</h2>
 
-          <div id="results-carousel" class="carousel results-carousel">
-
-            <div class="item">
-              <img src="static/images/framework.jpg" alt="AVC-Init Overall Framework" />
-              <h2 class="subtitle has-text-centered">
-                Fig. 1: Overview of AVC-Init. It includes data association, gyroscope bias estimation with aggregated
-                rotational constraints, global rotation recovery via bias-corrected IMU integration, global-position-based
-                estimation of velocity/gravity/accelerometer bias, and low-dimensional joint refinement using AEA.
-              </h2>
-            </div>
-
-            <div class="item">
-              <img src="static/images/factor_graph.jpg" alt="Factor Graph Representation" />
-              <h2 class="subtitle has-text-centered">
-                Fig. 2: Factor-graph comparison between (a) conventional visual-inertial bundle adjustment (VI-BA) and
-                (b) the proposed low-dimensional visual-inertial AEA (VI-AEA), which avoids explicitly optimizing 3D
-                landmarks.
-              </h2>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Results -->
-    <section class="section">
-      <div class="container is-max-desktop">
-        <h2 class="title is-3 has-text-centered">Experimental Results</h2>
-
-        <div class="content">
+        <div class="content has-text-justified">
           <p>
-            Experiments on the EuRoC MAV dataset and simulated sequences show that AVC-Init provides fast convergence
-            and strong estimation accuracy. In particular, using long-baseline aggregated constraints improves the
-            robustness of gyroscope-bias estimation under increasing pixel noise, while the global-position estimators
-            provide accurate and stable recovery of velocity, gravity direction, and scale across a wide range of
-            observation conditions.
-          </p>
-
-          <div class="has-text-centered">
-            <img src="static/images/noise_analysis.jpg" style="max-width: 80%;" alt="Noise Analysis" />
-            <p>
-              Fig. 3: Gyroscope-bias estimation accuracy under different pixel-noise levels, highlighting improved
-              robustness with aggregated long-baseline constraints.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BibTeX -->
-    <section class="section" id="BibTeX">
-      <div class="container is-max-desktop content">
-        <h2 class="title">BibTeX</h2>
-        <pre id="bibtex-code"><code>@article{ge2025avcinit,
-  title   = {AVC-Init: Aggregated Visual Constraints for Decoupled Visual-Inertial Initialization},
-  author  = {Ge, Yangbing and Zhang, Huaiyi and Lian, Xiangkai and Zhang, Lilian and Hu, Dewen},
-  journal = {arXiv preprint arXiv:XXXX.XXXXX},
-  year    = {2025},
-  url     = {https://github.com/VCaCLab/AVC-Init}
-}</code></pre>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="content has-text-centered">
-          <p>
-            This page was built using the
-            <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener noreferrer">
-              Academic Project Page Template
-            </a>.
+            Efficient and robust initialization is critical for visual-inertial odometry (VIO). We propose
+            <strong>AVC-Init</strong>, a decoupled visual-inertial initialization framework based on aggregated
+            visual constraints. The method first estimates gyroscope bias using aggregated rotational constraints
+            between co-visible keyframes and merged IMU preintegration. Then, velocity, gravity, and accelerometer
+            bias are robustly estimated through global position optimization. Finally, the proposed Aggregated
+            Epipolar Adjustment (AEA) enables efficient joint optimization in a low-dimensional space without
+            explicitly maintaining 3D landmarks. Experimental results demonstrate superior accuracy and efficiency
+            across simulation and real-world datasets.
           </p>
         </div>
-      </div>
-    </footer>
 
-  </main>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Methodology ================= -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+
+      <h2 class="title is-3 has-text-centered">Methodology</h2>
+
+      <div class="carousel results-carousel">
+
+        <div class="item">
+          <embed src="AVC-init/static/images/fig1.pdf"
+                 type="application/pdf"
+                 style="width:100%; height:600px;" />
+          <h2 class="subtitle has-text-centered">
+            Fig. 1: Overview of AVC-Init. It includes data association, gyroscope bias estimation with aggregated
+            rotational constraints, global rotation recovery via bias-corrected IMU integration, global-position-based
+            estimation of velocity/gravity/accelerometer bias, and low-dimensional joint refinement using AEA.
+          </h2>
+        </div>
+
+        <div class="item">
+          <embed src="AVC-init/static/images/fig2.pdf"
+                 type="application/pdf"
+                 style="width:100%; height:600px;" />
+          <h2 class="subtitle has-text-centered">
+            Fig. 2: Factor-graph comparison between (a) conventional visual-inertial bundle adjustment (VI-BA) and
+            (b) the proposed low-dimensional visual-inertial AEA (VI-AEA), which avoids explicitly optimizing 3D
+            landmarks.
+          </h2>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= Experimental Results ================= -->
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <h2 class="title is-3 has-text-centered">Experimental Results</h2>
+
+    <div class="content">
+      <p>
+        Experiments on the EuRoC MAV dataset demonstrate that AVC-Init achieves fast convergence and high estimation
+        accuracy. In particular, aggregated long-baseline constraints significantly improve robustness of gyroscope
+        bias estimation under increasing pixel noise.
+      </p>
+
+      <div class="has-text-centered">
+        <embed src="AVC-init/static/images/fig4.pdf"
+               type="application/pdf"
+               style="width:80%; height:600px;" />
+        <p>
+          Fig. 3: Gyroscope-bias estimation accuracy under different pixel-noise levels, highlighting improved
+          robustness with aggregated long-baseline constraints.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= Footer ================= -->
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        This page was built using the
+        <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+           target="_blank" rel="noopener noreferrer">
+          Academic Project Page Template
+        </a>.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</main>
 </body>
 </html>
